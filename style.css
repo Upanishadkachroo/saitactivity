@@ -3,25 +3,6 @@ body {
   background-color: #fffbf7;
 }
 
-nav {
-  color: white;
-  padding: 5px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  font-size: medium;
-  border-radius: 5px;
-}
-
-nav a:hover {
-  background-color: #ff5252;
-  color: white;
-}
-
 h1 {
   color: white;
   font-family: arial, sans-serif;
@@ -52,6 +33,7 @@ h3 {
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url(/images/depositphotos_408212422-stock-photo-pav-bhaji-indian-traditional-popular.jpg);
+
   z-index: -1;
   font-family: "Titillium Web", BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -124,9 +106,15 @@ ul > li::before {
   border-radius: 15px;
   box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.3);
 }
-
 .card:hover {
   transform: scale(1.05);
+  
+ 
+  
+}
+
+.card:hover img{
+  filter:grayscale(0%);
 }
 
 @media screen and (max-width: 767px) {
@@ -140,7 +128,13 @@ ul > li::before {
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
+  filter:grayscale(100%);
 }
+
+
+/* .card img:hover{
+  filter:grayscale(0%);
+} */
 .card h2 {
   color: #36454f;
   margin: 10px;
@@ -172,4 +166,5 @@ footer {
   background-color: #fffbf7;
   color: #777777;
   text-align: center;
+
 }
